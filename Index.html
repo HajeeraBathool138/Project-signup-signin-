@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: transparent;
+            background-image: linear-gradient(to left, rgb(68, 51, 18), rgb(156, 126, 75));
+            padding: 15px;
+        }
+
+        .img {
+            width: 100%;
+            height: 100%;
+            max-width: 445px;
+            position: absolute;
+            top: 26px;
+            left: 173px;
+            display: inline;
+        }
+
+        .container {
+            background-color: rgb(250, 250, 234);
+            height: 100%;
+            width: 100%;
+            max-width: 522px;
+            position: relative;
+            top: 12px;
+            left: 620px;
+            margin: 0px 13px;
+            padding: 31px 35px;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+
+
+        .inside-form {
+
+            height: 50px;
+            width: 400px;
+            font-size: 17px;
+            font-weight: normal;
+            margin: 10px 25px;
+            padding: 9px 15px;
+            color: rgb(116, 88, 38);
+            text-align: left;
+        }
+
+        .sp1 {
+            font-size: 35px;
+            position: absolute;
+            top: 20px;
+            left: 225px;
+            color: rgb(143, 103, 44);
+
+        }
+
+        .sp2 {
+            color: rgba(0, 0, 0, 0.438);
+            font-weight: lighter;
+            font-size: 20px;
+            position: absolute;
+            top: 65px;
+            left: 230px;
+        }
+
+        .container button {
+            display: inline;
+            width: 21%;
+            margin: 14px 13px;
+            position: relative;
+            left: 179px;
+        }
+
+        .btn {
+            padding: 9px 9px;
+            color: rgb(116, 88, 38);
+            background-color: rgb(179, 179, 179);
+            border: 2px solid rgb(179, 179, 179);
+            border-radius: 4px;
+            font-size: 15px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: rgb(116, 88, 38);
+            border: 2px solid rgb(116, 88, 38);
+            color: white;
+        }
+
+        .btn1 {
+            padding: 9px 9px;
+            background-color: rgb(116, 88, 38);
+            color: white;
+            border: 2px solid rgb(116, 88, 38);
+            border-radius: 4px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .btn1:hover {
+            background-color: rgb(82, 61, 24);
+            border: 2px solid rgb(82, 61, 24);
+            color: seashell;
+        }
+
+        .inp {
+            border: 1px solid rgb(173, 144, 74);
+            border-radius: 3px;
+            float: right;
+            padding: 8px 19px;
+            width: 59%;
+            background-color: transparent;
+            background-image: linear-gradient(to right, #d1d1d1d2, #d1d1d1);
+
+        }
+
+        .inp-Email {
+            border: 2px solid #d1cccc;
+            border-radius: 3px;
+            float: right;
+            padding: 8px 18px;
+            width: 59%;
+            background-color: transparent;
+            background-image: linear-gradient(to right, #d1d1d1d2, #d1d1d1);
+        }
+
+        .fa-venus {
+            font-size: large;
+            color: rgb(116, 88, 38);
+            background-color: rgb(155, 148, 132);
+            margin-left: 30px;
+            padding: 13px 15px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .fa-venus:active {
+            color: white;
+            background-color: rgb(116, 88, 38);
+        }
+
+        .fa-mars {
+            font-size: large;
+            color: white;
+            background-color: rgb(116, 88, 38);
+            margin-left: 25%;
+            padding: 13px 13px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .fa-mars:active {
+            color: rgb(116, 88, 38);
+            background-color: rgb(155, 148, 132);
+        }
+
+        .img .sp3 {
+            position: absolute;
+            top: 50px;
+            left: 182px;
+            color: rgb(122, 96, 43, 0.856);
+            font-size: 38px;
+        }
+
+        .img .sp4 {
+            position: absolute;
+            top: 98px;
+            left: 130px;
+            color: rgb(122, 96, 43, 0.856);
+            font-size: 25px;
+            font-weight: normal;
+        }
+
+        .img img {
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+        }
+
+        .loginhere {
+            color: rgb(116, 88, 38);
+            text-align: center;
+        }
+
+        .loginhere a {
+            color: chocolate;
+            font-size: 19px;
+            text-decoration: none;
+        }
+
+        .loginhere a:hover {
+            color: chocolate;
+            font-size: 19px;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="img">
+        <img src="photo-1607863680069-9919fbdbe0b4(0).jpeg" alt="Error Loading message" height="582px" width="475">
+        <span class="sp3"><em>Coffee</em></span>
+        <span class="sp4">Fresh like Cappuccino</span>
+    </div>
+    <div class="container">
+        <span class="sp1"><em>Registration</em></span><br>
+        <span class="sp2">Click for your shoot</span>
+        <br>
+        <br>
+        <form action="no action.php">
+            <div class="inside-form">
+                Name <input class="inp" type="text" name="name" placeholder="John Doe">
+            </div>
+            <div class="inside-form">
+                Email <input class="inp-Email" type="email" name="my email" placeholder="">
+            </div>
+            <div class="inside-form">
+                Gender <i class="fa-solid fa-mars"></i>male<i class="fa-solid fa-venus"></i>female
+            </div>
+            <div class="inside-form">
+                Date of Birth <input class="inp" type="datetime" placeholder="May 27,1997">
+            </div>
+            <div class="inside-form">
+                City <input class="inp" type="text" placeholder="Yongon">
+            </div>
+            <div class="inside-form">
+                Country <input class="inp" type="text" placeholder="Myanmar">
+            </div>
+            <div>
+                <button class="btn">CANCEL</button>
+                <button class="btn1">CONFIRM</button>
+                <p class="loginhere">Already have an account? <a href="http://127.0.0.1:5500/login.html">signin
+                        here!</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
