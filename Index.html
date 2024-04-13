@@ -17,32 +17,27 @@
         }
 
         body {
-            min-height: 100vh;
             background-color: transparent;
             background-image: linear-gradient(to left, rgb(68, 51, 18), rgb(156, 126, 75));
-            padding: 15px;
+            padding: 20px;
         }
 
         .img {
-            width: 100%;
-            height: 100%;
-            max-width: 445px;
-            position: absolute;
-            top: 26px;
-            left: 173px;
+            display: inline-block;
+            margin-left: 189px;
+        }
+        form{
+            margin: 0;
             display: inline;
         }
 
-        .container {
+        .Form {
             background-color: rgb(250, 250, 234);
-            height: 100%;
-            width: 100%;
+            position: absolute;
+            width: 45%;
             max-width: 522px;
-            position: relative;
-            top: 12px;
-            left: 620px;
-            margin: 0px 13px;
-            padding: 31px 35px;
+            display: inline-block;
+            padding: 32.8px 35px;
             border-top-right-radius: 6px;
             border-bottom-right-radius: 6px;
         }
@@ -60,11 +55,10 @@
             text-align: left;
         }
 
-        .sp1 {
+        .Form span {
             font-size: 35px;
-            position: absolute;
-            top: 20px;
-            left: 225px;
+            position: relative;
+            left: 190px;
             color: rgb(143, 103, 44);
 
         }
@@ -73,12 +67,11 @@
             color: rgba(0, 0, 0, 0.438);
             font-weight: lighter;
             font-size: 20px;
-            position: absolute;
-            top: 65px;
-            left: 230px;
+            position: relative;
+            left: 190px;
         }
 
-        .container button {
+        .Form button {
             display: inline;
             width: 21%;
             margin: 14px 13px;
@@ -176,16 +169,16 @@
 
         .img .sp3 {
             position: absolute;
-            top: 50px;
-            left: 182px;
+            top: 55px;
+            left: 355px;
             color: rgb(122, 96, 43, 0.856);
             font-size: 38px;
         }
 
         .img .sp4 {
             position: absolute;
-            top: 98px;
-            left: 130px;
+            top: 100px;
+            left: 285px;
             color: rgb(122, 96, 43, 0.856);
             font-size: 25px;
             font-weight: normal;
@@ -194,6 +187,9 @@
         .img img {
             border-top-left-radius: 6px;
             border-bottom-left-radius: 6px;
+            width: 100%;
+            height: 100%;
+            max-width: 420px;
         }
 
         .loginhere {
@@ -216,42 +212,44 @@
 </head>
 
 <body>
-    <div class="img">
-        <img src="photo-1607863680069-9919fbdbe0b4(0).jpeg" alt="Error Loading message" height="582px" width="475">
-        <span class="sp3"><em>Coffee</em></span>
-        <span class="sp4">Fresh like Cappuccino</span>
-    </div>
-    <div class="container">
-        <span class="sp1"><em>Registration</em></span><br>
-        <span class="sp2">Click for your shoot</span>
-        <br>
-        <br>
+    <div class="main">
+        <div class="img">
+            <img src="photo-1607863680069-9919fbdbe0b4(0).jpeg" alt="Error Loading message">
+            <span class="sp3"><em>Coffee</em></span>
+            <h2 class="sp4">Fresh like Cappuccino</h2>
+        </div>
         <form action="no action.php">
-            <div class="inside-form">
-                Name <input class="inp" type="text" name="name" placeholder="John Doe">
-            </div>
-            <div class="inside-form">
-                Email <input class="inp-Email" type="email" name="my email" placeholder="">
-            </div>
-            <div class="inside-form">
-                Gender <i class="fa-solid fa-mars"></i>male<i class="fa-solid fa-venus"></i>female
-            </div>
-            <div class="inside-form">
-                Date of Birth <input class="inp" type="datetime" placeholder="May 27,1997">
-            </div>
-            <div class="inside-form">
-                City <input class="inp" type="text" placeholder="Yongon">
-            </div>
-            <div class="inside-form">
-                Country <input class="inp" type="text" placeholder="Myanmar">
-            </div>
-            <div>
-                <button class="btn">CANCEL</button>
-                <button class="btn1">CONFIRM</button>
-                <p class="loginhere">Already have an account? <a href="login.html">signin
-                        here!</a></p>
-            </div>
-        </form>
+                <div class="Form">
+                    <span class="sp1"><em>Registration</em></span><br>
+                    <h2 class="sp2">Click for your shoot</h2>
+                    <br>
+                    <br>
+                <div class="inside-form">
+                    Name <input class="inp" type="text" name="name" placeholder="John Doe">
+                </div>
+                <div class="inside-form">
+                    Email <input class="inp-Email" type="email" name="my email" placeholder="">
+                </div>
+                <div class="inside-form">
+                    Gender <i class="fa-solid fa-mars"></i>male<i class="fa-solid fa-venus"></i>female
+                </div>
+                <div class="inside-form">
+                    Date of Birth <input class="inp" type="datetime" placeholder="May 27,1997">
+                </div>
+                <div class="inside-form">
+                    City <input class="inp" type="text" placeholder="Yongon">
+                </div>
+                <div class="inside-form">
+                    Country <input class="inp" type="text" placeholder="Myanmar">
+                </div>
+                <div>
+                    <button class="btn">CANCEL</button>
+                    <button class="btn1">CONFIRM</button>
+                    <p class="loginhere">Already have an account? <a href="login.html">signin
+                            here!</a></p>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 
